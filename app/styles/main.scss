@@ -6,8 +6,13 @@ $icon-font-path: '../fonts/';
 $green: #1F4827;
 $red: #B8111E;
 
-body {
-  background-color: $green;
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/background.jpg');
+  background-position: bottom;
 }
 
 .container{
