@@ -1,0 +1,20 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$green: #1F4827;
+$red: #B8111E;
+
+body {
+  background-color: $green;
+}
+
+.container{
+  padding-top: 20%;
+  h1 {
+    color: $red;
+    font-size: 50px;
+    text-align: center;
+  }
+}
