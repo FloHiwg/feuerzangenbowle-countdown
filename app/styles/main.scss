@@ -11,15 +11,25 @@ html, body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: #3B3B3B;
+  background: #350a0e; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #350a0e 0%, #75171a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #350a0e 0%,#75171a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #350a0e 0%,#75171a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#350a0e', endColorstr='#75171a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   background-position: bottom;
 }
 
 .container{
   padding-top: 20%;
-  h1 {
-    color: $red;
-    font-size: 50px;
+  div {
+    color: #CBB552;
+    font-family: 'Great Vibes', cursive;
     text-align: center;
+    &.headline {
+      font-size: 100px;
+    }
+    &.countdown {
+      font-size: 45px;
+    }
   }
 }

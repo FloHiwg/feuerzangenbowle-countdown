@@ -7,6 +7,7 @@
     <title>Feuerzangenbowle</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -29,20 +30,10 @@
 
     <div class="wrapper">
       <div class="container">
-        <h1>Feuerzangenbowle-Spektakel</h1>
-        <h1 id="countdown"></h1>
+        <div class="headline">Feuerzangenbowle-Spektakel</div>
+        <div class="countdown" id="countdown"></div>
       </div>
     </div>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -73,12 +64,12 @@
 
     <script type="text/javascript">
       $("#countdown")
-          .countdown("2017/12/23 19:00", function(event) {
+          .countdown("2018/12/23 19:00", function(event) {
               $(this).text(
                   "test"
               );
-              this.innerHTML = event.strftime('%D') + "<b>Tage</b>&nbsp;&nbsp;&nbsp;" + event.strftime('%H') + "<b>Stunden</b>&nbsp;&nbsp;&nbsp;" + event.strftime('%M') + "<b>Min</b>&nbsp;&nbsp;&nbsp;" + event.strftime('%S') +
-                  "<b>Sek</b>"
+              this.innerHTML = event.strftime('%D') + " &nbsp;Tage&nbsp;&nbsp;&nbsp;" + event.strftime('%H') + "&nbsp;Stunden&nbsp;&nbsp;&nbsp;" + event.strftime('%M') + "&nbsp;Min&nbsp;&nbsp;&nbsp;" + event.strftime('%S') +
+                  "&nbsp;Sek"
           });
     </script>
   </body>
